@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="60" viewBox="0 0 1000 60" role="img" aria-label="05 More Builds">
+<title>05 More Builds</title>
+<style>.s{font-family:'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-serif}.m{font-family:ui-monospace,'SF Mono','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace}</style>
+<defs><linearGradient id="sl" x1="0" x2="1"><stop offset="0" stop-color="#c8f560" stop-opacity=".8"/><stop offset="1" stop-color="#c8f560" stop-opacity="0"/></linearGradient></defs><rect x=".5" y=".5" width="999" height="59" rx="14" fill="#050605" stroke="#1c221b"/><text x="24" y="37" class="m" font-size="14" font-weight="700" fill="#c8f560">05</text><text x="58" y="38" class="s" font-size="21" font-weight="800" letter-spacing="2.5" fill="#eef0ea">MORE BUILDS</text><rect x="270" y="30" width="706" height="1.5" fill="url(#sl)"/><rect x="270" y="28.5" width="40" height="4.5" rx="2" fill="#c8f560"><animate attributeName="x" values="270;916" dur="3.5s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;0" dur="3.5s" repeatCount="indefinite"/></rect>
+</svg>
