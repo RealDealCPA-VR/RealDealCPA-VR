@@ -21,7 +21,7 @@
   <a href="https://github.com/RealDealCPA-VR/IronCore"><img src="assets/card-ironcore.svg" width="49%" alt="IronCore: the coding agent that molds itself to local models"></a>
   <a href="https://github.com/RealDealCPA-VR/Quickbooks-MCP-Desktop"><img src="assets/card-quickbooks-mcp.svg" width="49%" alt="QuickBooks MCP Desktop: let AI agents keep QuickBooks Desktop books, safely"></a>
   <a href="https://github.com/RealDealCPA-VR/Iron-Proxy"><img src="assets/card-iron-proxy.svg" width="49%" alt="Iron-Proxy: all your AI subscriptions, never hit a limit"></a>
-  <a href="https://github.com/RealDealCPA-VR/KarbonCopy"><img src="assets/card-karboncopy.svg" width="49%" alt="KarbonCopy: the whole accounting practice, on your own network"></a>
+  <a href="https://github.com/RealDealCPA-VR/Ironbooks"><img src="assets/card-ironbooks.svg" width="49%" alt="Ironbooks: QuickBooks Desktop power on your own machine, open source, no subscription"></a>
 </p>
 
 <img src="assets/section-screens.svg" width="100%" alt="02 On screen">
@@ -42,14 +42,14 @@
 
 <img src="assets/section-stack.svg" width="100%" alt="04 Stack">
 
-<img src="assets/stack.svg" width="100%" alt="Languages across public repos and the toolbox: Python, TypeScript, Rust, C#, FastAPI, Next.js, React, Electron, MCP, Claude, Ollama, vLLM, DGX Spark and more">
+<img src="assets/stack.svg" width="100%" alt="Languages across public repos and the toolbox: Python, TypeScript, Rust, C#, FastAPI, Next.js, React, Electron, Postgres, MCP, Claude, Ollama, vLLM, DGX Spark and more">
 
 <img src="assets/section-more.svg" width="100%" alt="05 More builds">
 
 | | Build | What it does |
 |:-:|---|---|
 | 🟡 | [**Lacerte MCP**](https://github.com/RealDealCPA-VR/LacertMCP) | Professional tax software, callable by AI. |
-| 🟡 | [**BookKeeper AI**](https://github.com/RealDealCPA-VR/Open-Source-QB) | Open-source desktop accounting with AI error correction. |
+| 🟡 | [**KarbonCopy**](https://github.com/RealDealCPA-VR/KarbonCopy) | The whole accounting practice, on your own network. |
 | 🧪 | [**RealDeal CPA Agent**](https://github.com/RealDealCPA-VR/VR-Agent) | An AI accounting employee, not a chatbot. |
 | 🟢 | [**vr-ledger**](https://github.com/RealDealCPA-VR/VR-Ledger) | Plain-text double-entry books your code can query. |
 | 🟢 | [**ExcelLocal**](https://github.com/RealDealCPA-VR/Execllocal) | A local AI agent inside Excel. |

@@ -34,14 +34,14 @@ SANS = "'Inter','Segoe UI',system-ui,-apple-system,'Helvetica Neue',Arial,sans-s
 MONO = "ui-monospace,'SF Mono','Cascadia Code',Consolas,'DejaVu Sans Mono',monospace"
 
 # ─────────────────────────────── curated copy ───────────────────────────────
-# Numbers here were read from each project (README, tests, git) on 2026-10-03.
+# Numbers here were read from each project (README, tests, git) on 2026-10-16.
 FLAGSHIPS = [
     {
         "file": "card-iron-jarvis", "repo": "Iron-Jarvis", "name": "Iron Jarvis", "accent": ARC,
         "kind": "AI OPERATING SYSTEM", "pill": "{release} · SHIPPING",
         "tagline": "Your own local-first AI operating system.",
         "blurb": "One chat box that hands big jobs to a team of agents. They plan, build and review in sandboxed worktrees, and nothing merges without your approval.",
-        "metrics": [("{stars}★", "stars"), ("{tags}", "releases"), ("10.8K+", "tests"), ("{commits}", "commits")],
+        "metrics": [("{stars}★", "stars"), ("{tags}", "releases"), ("15K+", "tests"), ("{commits}", "commits")],
         "stack": "Python · FastAPI · Next.js · Electron · MCP",
     },
     {
@@ -64,34 +64,35 @@ FLAGSHIPS = [
         "file": "card-quickbooks-mcp", "repo": "Quickbooks-MCP-Desktop", "name": "QuickBooks MCP", "accent": "#4ade80",
         "kind": "MCP SERVER · ACCOUNTING", "pill": "{release} · SHIPPED",
         "tagline": "Let AI agents keep QuickBooks Desktop books, safely.",
-        "blurb": "150 accounting tools over QBXML with dry-run previews, read-only sessions and rollback-safe batch posting. Real books, no wreckage.",
-        "metrics": [("150", "mcp tools"), ("1,725", "tests"), ("65K", "lines of ts")],
+        "blurb": "154 accounting tools over QBXML with dry-run previews and rollback-safe batch posting, plus an office hub that serves many QuickBooks workstations.",
+        "metrics": [("154", "mcp tools"), ("1,825", "tests"), ("65K", "lines of ts")],
         "stack": "TypeScript · MCP SDK · QBXML 16.0 · COM",
     },
     {
         "file": "card-iron-proxy", "repo": "Iron-Proxy", "name": "Iron-Proxy", "accent": "#7aa2ff",
-        "kind": "DEVELOPER TOOL · MIT", "pill": "OPEN SOURCE",
+        "kind": "DEVELOPER TOOL · MIT", "pill": "OPEN SOURCE · INSIDE IRON JARVIS",
         "tagline": "All your AI subscriptions. Never hit a limit.",
-        "blurb": "Ordered failover across your own accounts: it switches mid-conversation when one runs out and switches back the moment it resets.",
+        "blurb": "Ordered failover across your own accounts: it switches mid-conversation when one runs out and back the moment it resets. Now Iron Jarvis's account manager.",
         "metrics": [("364", "test cases"), ("5", "packages"), ("0", "core deps")],
         "stack": "TypeScript · Electron · React · pnpm workspaces",
     },
     {
-        "file": "card-karboncopy", "repo": "KarbonCopy", "name": "KarbonCopy", "accent": "#b79cff",
-        "kind": "PRACTICE MANAGEMENT · SELF-HOSTED", "pill": "PROTOTYPE",
-        "tagline": "The whole accounting practice, on your own network.",
-        "blurb": "Work tracking, billing, client portal and e-signatures on one office machine, with a 33-tool MCP server so Claude can run the practice.",
-        "metrics": [("43", "db tables"), ("33", "mcp tools"), ("34", "app pages")],
-        "stack": "Next.js 15 · SQLite · Drizzle · Socket.IO · Stripe",
+        "file": "card-ironbooks", "repo": "Ironbooks", "name": "Ironbooks", "accent": "#b79cff",
+        "kind": "ACCOUNTING · OPEN SOURCE · MIT", "pill": "{release} · SHIPPING",
+        "tagline": "QuickBooks Desktop power. Your machine. No subscription.",
+        "blurb": "Double-entry books where the database itself refuses an unbalanced entry. Imports a QuickBooks GL from PDF, and local AI does the categorizing.",
+        "metrics": [("3,965", "tests"), ("279K", "lines of ts"), ("{tags}", "releases")],
+        "stack": "Next.js 15 · Electron · Postgres · Drizzle · Ollama",
     },
 ]
 
-TOTAL_TESTS = "23,600+"   # 10,800 + 6,534 + 2,740 + 1,725 + 1,443 + 364 across the flagships
-TOTAL_LINES = "990K+"     # 558K Rust + 282K Iron Jarvis + 65K + 41.5K + 30.8K + 15.4K
+TOTAL_TESTS = "30,000+"   # 15,000 + 6,534 + 3,965 + 2,740 + 1,825 + 364 across the flagships
+TOTAL_LINES = "1.3M+"     # 558K Rust + 361K Iron Jarvis + 279K Ironbooks + 65K + 30.8K + 15.4K (non-test source)
 
 PHRASES = [
     "a local-first AI operating system",
     "MCP servers that keep real books",
+    "open-source books, no subscription",
     "a Photoshop-class editor in Rust",
     "private AI on two DGX Sparks",
     "agents that ask before they act",
@@ -386,7 +387,7 @@ def stats(live: dict) -> str:
                 )
                 digit_i += 1
             else:
-                colr = col if ch in "★+K" else PAPER
+                colr = col if ch in "★+KM" else PAPER
                 out.append(f'<text x="{ccx:.1f}" y="{base_y}" text-anchor="middle" class="m" font-size="{fs}" font-weight="700" fill="{colr}">{x(ch)}</text>')
         out.append("</g>")
         out.append(f'<text x="{tw/2:.1f}" y="124" text-anchor="middle" class="s" font-size="12.5" fill="{DIM}">{x(sub)}</text>')
@@ -398,7 +399,7 @@ def stats(live: dict) -> str:
 def terminal(live: dict) -> str:
     W = 1000
     fl = live["flagships"]
-    ij, ic, qb = fl["Iron-Jarvis"], fl["IronCore"], fl["Quickbooks-MCP-Desktop"]
+    ij, ic, qb, ib = fl["Iron-Jarvis"], fl["IronCore"], fl["Quickbooks-MCP-Desktop"], fl["Ironbooks"]
 
     def fleet(name, ver, detail, state, col):
         return ("out", [("● ", col), (f"{name:<17}", PAPER), (f"{(ver or ''):<11}", ARC), (f"{detail:<34}", MUTED), (state, col)])
@@ -416,10 +417,11 @@ def terminal(live: dict) -> str:
         ("out", [("▸ ", LIME), ("Prove it.     ", PAPER), ("A green suite is not proof. Drive the real app.", MUTED)]),
         ("gap", None),
         ("cmd", "jarvis status --fleet"),
-        fleet("Iron Jarvis", ij["release"], f"{num(ij['tags'])} releases · 10,800+ tests", "shipping", LIME),
+        fleet("Iron Jarvis", ij["release"], f"{num(ij['tags'])} releases · 15,000+ tests", "shipping", LIME),
+        fleet("Ironbooks", ib["release"], "QB-class books · 3,965 tests", "shipping", LIME),
         fleet("Raster Studio", "rust", "558K lines · 6,534 tests", "building", COPPER),
         fleet("IronCore", ic["release"], "on PyPI · 2,740 offline tests", "shipped", LIME),
-        fleet("QuickBooks MCP", qb["release"], "150 tools · 1,725 tests", "shipped", LIME),
+        fleet("QuickBooks MCP", qb["release"], "154 tools · 1,825 tests", "shipped", LIME),
         ("prompt", None),
     ]
     lh, fs, cw, left, top = 25, 15, 9.0, 32, 76
