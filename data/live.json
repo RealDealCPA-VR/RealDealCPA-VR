@@ -1,35 +1,7 @@
 {
- "fetchedAt": "2026-11-07T18:21:05+00:00",
- "contributions": 3806,
+ "fetchedAt": "2026-11-08T00:42:44+00:00",
+ "contributions": 3821,
  "days": [
-  [
-   "2025-11-02",
-   0
-  ],
-  [
-   "2025-11-03",
-   0
-  ],
-  [
-   "2025-11-04",
-   0
-  ],
-  [
-   "2025-11-05",
-   0
-  ],
-  [
-   "2025-11-06",
-   0
-  ],
-  [
-   "2025-11-07",
-   0
-  ],
-  [
-   "2025-11-08",
-   0
-  ],
   [
    "2025-11-09",
    0
@@ -1484,14 +1456,18 @@
   ],
   [
    "2026-11-07",
-   12
+   27
+  ],
+  [
+   "2026-11-08",
+   0
   ]
  ],
  "stars": 91,
  "publicRepos": 42,
  "languages": {
   "JavaScript": {
-   "bytes": 2351541,
+   "bytes": 2372473,
    "color": "#f1e05a"
   },
   "HTML": {
@@ -1507,7 +1483,7 @@
    "color": "#fcb32c"
   },
   "Python": {
-   "bytes": 47391672,
+   "bytes": 47504235,
    "color": "#3572A5"
   },
   "Dockerfile": {
@@ -1515,7 +1491,7 @@
    "color": "#384d54"
   },
   "TypeScript": {
-   "bytes": 78619382,
+   "bytes": 78757013,
    "color": "#3178c6"
   },
   "Shell": {
@@ -1531,7 +1507,7 @@
    "color": "#701516"
   },
   "PowerShell": {
-   "bytes": 217319,
+   "bytes": 218268,
    "color": "#012456"
   },
   "C#": {
@@ -1577,9 +1553,9 @@
  },
  "flagships": {
   "Iron-Jarvis": {
-   "release": "v1.445.1",
-   "tags": 601,
-   "commits": 2257,
+   "release": "v1.447.0",
+   "tags": 604,
+   "commits": 2266,
    "stars": 66
   },
   "Raster-studio": {
@@ -1607,9 +1583,9 @@
    "stars": 0
   },
   "Ironbooks": {
-   "release": "v1.6.0",
-   "tags": 9,
-   "commits": 874,
+   "release": "v1.7.0",
+   "tags": 10,
+   "commits": 880,
    "stars": 5
   }
  }
