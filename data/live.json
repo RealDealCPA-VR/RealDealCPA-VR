@@ -1,6 +1,6 @@
 {
- "fetchedAt": "2026-11-16T06:46:06+00:00",
- "contributions": 4197,
+ "fetchedAt": "2026-11-16T12:36:05+00:00",
+ "contributions": 4200,
  "days": [
   [
    "2025-11-16",
@@ -1304,11 +1304,11 @@
   ],
   [
    "2026-10-07",
-   16
+   10
   ],
   [
    "2026-10-08",
-   42
+   41
   ],
   [
    "2026-10-09",
@@ -1464,30 +1464,30 @@
   ],
   [
    "2026-11-16",
-   2
+   12
   ]
  ],
  "stars": 93,
- "publicRepos": 42,
+ "publicRepos": 41,
  "languages": {
   "JavaScript": {
-   "bytes": 2442193,
+   "bytes": 1852679,
    "color": "#f1e05a"
   },
   "HTML": {
-   "bytes": 241257,
+   "bytes": 236195,
    "color": "#e34c26"
   },
   "CSS": {
-   "bytes": 608011,
+   "bytes": 541612,
    "color": "#663399"
   },
   "MDX": {
-   "bytes": 3633176,
+   "bytes": 240335,
    "color": "#fcb32c"
   },
   "Python": {
-   "bytes": 53378473,
+   "bytes": 53350141,
    "color": "#3572A5"
   },
   "Dockerfile": {
@@ -1495,11 +1495,11 @@
    "color": "#384d54"
   },
   "TypeScript": {
-   "bytes": 81181807,
+   "bytes": 56972251,
    "color": "#3178c6"
   },
   "Shell": {
-   "bytes": 95405,
+   "bytes": 58407,
    "color": "#89e051"
   },
   "Go Template": {
@@ -1545,21 +1545,13 @@
   "VBScript": {
    "bytes": 119,
    "color": "#15dcdc"
-  },
-  "Vue": {
-   "bytes": 103669,
-   "color": "#41b883"
-  },
-  "Svelte": {
-   "bytes": 1440,
-   "color": "#ff3e00"
   }
  },
  "flagships": {
   "Iron-Jarvis": {
-   "release": "v1.504.0",
-   "tags": 681,
-   "commits": 2601,
+   "release": "v1.507.1",
+   "tags": 684,
+   "commits": 2609,
    "stars": 68
   },
   "Raster-studio": {
@@ -1587,9 +1579,9 @@
    "stars": 0
   },
   "Ironbooks": {
-   "release": "v1.7.7",
-   "tags": 17,
-   "commits": 921,
+   "release": "v1.7.8",
+   "tags": 18,
+   "commits": 922,
    "stars": 5
   }
  }
