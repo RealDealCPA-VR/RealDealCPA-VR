@@ -1,5 +1,5 @@
 {
- "fetchedAt": "2026-11-23T06:41:20+00:00",
+ "fetchedAt": "2026-11-23T12:28:47+00:00",
  "contributions": 4602,
  "days": [
   [
@@ -1579,8 +1579,8 @@
    "stars": 0
   },
   "Ironbooks": {
-   "release": "v1.7.20",
-   "tags": 30,
+   "release": "v1.8.0",
+   "tags": 31,
    "commits": 980,
    "stars": 9
   }
